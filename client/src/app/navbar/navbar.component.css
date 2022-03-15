@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #234E70;
+    padding: .9rem;
+    letter-spacing: .1rem;
+    font-size: 1.05rem;
+}
+
+.navbar-nav .nav-link {
+    color: #FBF8BE;
+}
+
+.navbar-brand img {
+    height: 3.4rem;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+#nav-btn {
+    width: .7rem;
+    height: 1.7rem;
+    background-color: transparent;
+    position: absolute;
+    right: 5%;
+    top: 1.5rem;
+}
+
+#nav-btn img {
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    left: 10%;
+}
+
+.toggle-menu-style {
+    display: block;
+}

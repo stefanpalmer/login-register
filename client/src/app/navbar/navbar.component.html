@@ -11,11 +11,15 @@
         <div class="collapse navbar-collapse" [ngClass]="{'toggle-menu-style' : toggleMenu === true}" id="navbar-responsive">
             <ul class="navbar-nav ml-auto">
                 
-                <li class="nav-item">
+                <li class="nav-item" *ngIf="(accountService.currentUser$ | async) === null">
                     <a class="nav-link" href="#" (click)="closeMenu()">Register</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" *ngIf="(accountService.currentUser$ | async) === null">
                     <a class="nav-link" href="#" (click)="closeMenu()">Login</a>
+                </li>
+
+                <li class="nav-item" *ngIf="accountService.currentUser$ | async">
+                    <a class="nav-link" href="" (click)="logout()">Log Out</a>
                 </li>
             
             </ul>

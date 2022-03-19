@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountService } from '../_services/account.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   toggleMenu = false;
 
-  constructor() { }
+  constructor(public accountService : AccountService) { }
 
   ngOnInit(): void {
   }
@@ -21,6 +22,10 @@ export class NavbarComponent implements OnInit {
     if (this.toggleMenu = true) {
       this.toggleMenu = false;
     }
+  }
+
+  logout() {
+    this.accountService.logout();
   }
 
 }

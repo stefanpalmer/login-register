@@ -1,8 +1,7 @@
 <div class="container-fluid">
     <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
         <div id="form-container">
-            <h1 id="form-title" *ngIf="!loggedIn">Login</h1>
-            <h1 id="form-title" *ngIf="loggedIn">Logged In</h1>
+            <h1 id="form-title">Login</h1>
             <div class="form-group">
                 <label for="username-login">Username</label>
                 <input type="text" id="username-login" class="form-control" name="username-login" 
@@ -16,10 +15,6 @@
             <div id="buttons">
                 <button class="btn btn-info" type="submit">Submit</button>
                 <button class="btn btn-danger" type="button">Cancel</button>
-            </div>
-            <div *ngIf="loggedIn">
-                <h4>You're logged in</h4>
-                <button class="btn btn-warning" type="button" (click)="logout()">Log out!</button>
             </div>
         </div>
     </form>

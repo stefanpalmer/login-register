@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <form #registerForm="ngForm" (ngSubmit)="register()" autocomplete="off">
+        <div id="form-container">
+            <h1 id="form-title">Register</h1>
+            <div class="form-group">
+                <label for="username-reg">Username</label>
+                <input type="text" id="username-reg" class="form-control" name="username-reg"
+                [(ngModel)]="model.username">
+            </div>
+            <div class="form-group">
+                <label for="password-reg">Password</label>
+                <input type="text" id="password-reg" class="form-control" name="password-reg"
+                [(ngModel)]="model.password">
+            </div>
+            <div id="buttons">
+                <button class="btn btn-info" type="submit">Submit</button>
+                <button class="btn btn-danger" type="button" (click)="cancel()">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>

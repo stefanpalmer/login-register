@@ -1,0 +1,12 @@
+#home-contain {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-text {
+    width: 80%;
+    text-align: center;
+    background-color: #FBF8BE;
+}

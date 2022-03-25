@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AccountService } from '../_services/account.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { AccountService } from '../_services/account.service';
 export class NavbarComponent implements OnInit {
   toggleMenu = false;
 
-  constructor(public accountService : AccountService) { }
+  constructor(public accountService : AccountService, public router: Router) { }
 
   ngOnInit(): void {
   }
@@ -26,6 +27,7 @@ export class NavbarComponent implements OnInit {
 
   logout() {
     this.accountService.logout();
+    this.router.navigateByUrl('/home');
   }
 
 }

@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
 
   register() {
     this.accountService.register(this.model).subscribe(response => {
-      console.log(response);
+      this.router.navigate(['../register-confirm'], {relativeTo: this.route});
     }, error => {
       console.log(error);
     })

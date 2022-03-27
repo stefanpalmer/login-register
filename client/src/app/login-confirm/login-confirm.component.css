@@ -1,0 +1,9 @@
+.container h2 {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    right: 5%;
+    line-height: 3.2rem;
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+}

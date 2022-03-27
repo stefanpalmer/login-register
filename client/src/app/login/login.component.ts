@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.accountService.login(this.model).subscribe(response => {
+      this.router.navigate(['../login-confirm'], {relativeTo: this.route});
       console.log(response);
     }, error => {
       console.log(error);

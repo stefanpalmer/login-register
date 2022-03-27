@@ -1,0 +1,12 @@
+table {
+    margin: 1rem auto;
+    width: 30%;
+}
+
+th {
+    font-size: 1.7rem;
+}
+
+td {
+    font-size: 1.2rem;
+}

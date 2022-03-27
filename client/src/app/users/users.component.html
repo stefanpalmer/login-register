@@ -1,1 +1,14 @@
-<p>users works!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <tbody *ngFor='let user of users'>
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.userName}}</td>
+        </tr>
+    </tbody>
+</table>

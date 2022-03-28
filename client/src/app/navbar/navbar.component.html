@@ -19,7 +19,10 @@
                 </li>
 
                 <li class="nav-item" *ngIf="accountService.currentUser$ | async">
-                    <a class="nav-link" routerLink="/users" (click)="logout()">Log Out</a>
+                    <a class="nav-link" routerLink="/users">List of Users</a>
+                </li>
+                <li class="nav-item" *ngIf="accountService.currentUser$ | async">
+                    <a class="nav-link" routerLink="/home" (click)="logout()">Log Out</a>
                 </li>
             
             </ul>

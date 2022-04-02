@@ -13,6 +13,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginConfirmComponent } from './login-confirm/login-confirm.component';
 import { RegisterConfirmComponent } from './register-confirm/register-confirm.component';
 import { UsersComponent } from './users/users.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,10 @@ import { UsersComponent } from './users/users.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

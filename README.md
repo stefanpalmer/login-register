@@ -1,0 +1,1 @@
+ASP.NET back-end and Angular front-end. Users can register and login & logout with their stored username and password. Passwords are secured with a hash algorithm, and the user also gets a JWT token for authentication. Logged-in user can see the list of registered users.
